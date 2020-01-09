@@ -8,5 +8,7 @@ namespace Gym.Models
 {
     public class ApplicationUser : IdentityUser
     {
+        //Navigation property
+        public virtual ICollection<ApplicationUserGymClass> AttendedClasses { get; set; }
     }
 }

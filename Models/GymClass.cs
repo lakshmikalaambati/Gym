@@ -14,5 +14,8 @@ namespace Gym.Models
         public DateTime EndTime { get { return StartTime + Duration; } }
         public string Description { get; set; }
 
+        //Navigation property
+        public virtual ICollection<ApplicationUserGymClass> AttendingMembers { get; set; }
+
     }
 }
