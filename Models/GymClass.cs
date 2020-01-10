@@ -15,7 +15,7 @@ namespace Gym.Models
         public string Description { get; set; }
 
         //Navigation property
-        public virtual ICollection<ApplicationUserGymClass> AttendingMembers { get; set; }
+        public ICollection<ApplicationUserGymClass> AttendingMembers { get; set; }
 
     }
 }
